@@ -1,9 +1,9 @@
-package page;
+package com.emmerseweb.page;
 
-import static util.AppConstant.EXPLICIT_WAIT_DURATION;
-import static util.AppConstant.ExceptionMessage.NO_SUCH_ELEMENT;
+import static com.emmerseweb.util.AppConstant.EXPLICIT_WAIT_DURATION;
+import static com.emmerseweb.util.AppConstant.ExceptionMessage.NO_SUCH_ELEMENT;
 
-import exception.NoSuchElementException;
+import com.emmerseweb.exception.NoSuchElementException;
 
 import java.io.File;
 import java.time.Duration;
@@ -18,7 +18,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import util.StringUtil;
+import com.emmerseweb.util.StringUtil;
 
 /**
  * BasePage class provides common web automation methods using Selenium WebDriver. It includes

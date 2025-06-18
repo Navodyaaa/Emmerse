@@ -1,8 +1,8 @@
-package util;
+package com.emmerseweb.util;
 
-import static util.AppConstant.ExceptionMessage.UNDEFINED_BROWSER_TYPE;
+import static com.emmerseweb.util.AppConstant.ExceptionMessage.UNDEFINED_BROWSER_TYPE;
 
-import exception.BrowserException;
+import com.emmerseweb.exception.BrowserException;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import java.util.Map;
 import java.util.function.Supplier;

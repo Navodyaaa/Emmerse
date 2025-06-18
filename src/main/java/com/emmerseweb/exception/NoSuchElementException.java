@@ -1,4 +1,4 @@
-package exception;;
+package com.emmerseweb.exception;;
 
 public class NoSuchElementException extends CustomException {
 

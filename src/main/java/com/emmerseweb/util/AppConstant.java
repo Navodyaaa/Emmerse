@@ -1,4 +1,4 @@
-package util;
+package com.emmerseweb.util;
 
 public class AppConstant {
 

@@ -1,4 +1,4 @@
-package exception;;
+package com.emmerseweb.exception;;
 
 public class CustomException extends RuntimeException {
   private String message;

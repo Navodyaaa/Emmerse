@@ -1,9 +1,10 @@
-package page;
+package com.emmerseweb.page;
 
 import lombok.Getter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import com.emmerseweb.page.admin.DashboardPage;
 
 
 @Getter
@@ -40,6 +41,22 @@ public class Login extends BasePage {
 //}
 //
 
+    public boolean isLoginFailErrorMessageDisplayed1() {
+        return isElementDisplay(errorLabel1);
+    }
+
+    public boolean isLoginFailErrorMessageDisplayed2() {
+        return isElementDisplay(errorLabel2);
+    }
+
+    public DashboardPage clickOnLoginButton() {
+        clickOnElement(loginButton);
+        return PageFactory.initElements(driver, DashboardPage.class);
+    }
+
+    public boolean isLoginFailToastDisplayed() {
+        return isElementDisplay(toastMessage);
+    }
+ }
 
 
-}
